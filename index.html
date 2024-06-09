@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px green;
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="file"] {
+            padding: 3px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        span{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <center>
+        <img src="/image/images.png" alt="">
+    </center>
+        <h1><span>Saylani Regis</span>tration Form</h1>
+        <form action="https://formsubmit.co/hammadn788@gmail.com" method="POST"></form>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name"><span>N</span>ame:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="fatherName"><span>F</span>ather <span>N</span>ame:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+            </div>
+            <div class="form-group">
+                <label for="city"><span>C</span>ity:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="phone"><span>P</span>hone <span>N</span>umber:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><span>E</span>mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="cnic"><span>C</span>NIC:</label>
+                <input type="text" id="cnic" name="cnic" required>
+            </div>
+            <div class="form-group">
+                <label for="dob"><span>D</span>ate <span>o</span>f <span>B</span>irth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender"><span>G</span>ender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address"><span>A</span>ddress:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="qualification"><span>L</span>ast <span>Q</span>ualification:</label>
+                <input type="text" id="qualification" name="qualification" required>
+            </div>
+            <div class="form-group">
+                <label for="photo"><span>P</span>hoto <span>(P</span>NG) <span>(J</span>PG) :</label>
+                <input type="file" id="photo" name="photo" accept="image/png" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-title="Saylani-bot"
+      agent-id="00493547-9934-4b65-94fc-7f6b14916067"
+      language-code="en"
+    ></df-messenger>
+</body>
+</html>
